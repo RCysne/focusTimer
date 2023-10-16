@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+
+  --item-white: #E5E5E5;
+  --item-black: #323238;
+  --icon-white: #FFF;
+  --button-hover: #02799D;
+  --environment-back: #E1E1E6;
+}
+
+#toggle-mode {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  border: none;
+  border-radius: 999rem;
+  cursor: pointer;
+}
+
+#container {
+  width: 82.1rem;
+  height: 33.6rem;
+  margin: 15% auto 0;
+  padding: 3rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#timer {
+  display: flex;
+  justify-content: center;
+}
+
+#timer span {
+  font-size: 10rem;
+  font-family: Arial, Helvetica, sans-serif;
+} 
+
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--environment-back);
+  border-radius: 999rem;
+  padding: 1rem;;
+}
+
+#timer-controls button {
+  background: transparent;
+  border: none;
+  font-size: 2.5rem;
+
+  cursor: pointer;
+}
+
+#environments {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.environments-buttons {
+  background-color: var(--environment-back);
+  width: 13.8rem;
+  height: 15.2rem;
+  border-radius: 2.4rem;
+  border: none;
+  display: flex;
+  padding: 5rem;
+
+  cursor: pointer;
+}
+
+.environments-buttons:hover {
+  background-color: var(--button-hover);
+}
+
+/*  CONTROLS RUNNING */
+
+.running {
+  
+}
