@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="./src/main.js" defer></script>
 
     <title>FocusTimer 2.0</title>
   </head>
   <body>
     <!-- button modo dark -->
-    <button id="toggle-mode">
+    <button id="toggle-view-mode">
       <i class="ph ph-moon"></i>
-      <!-- <i class="ph ph-sun"></i> -->
+      <i class="ph ph-sun"></i>
     </button>
 
     <!-- Timer -->
     <div id="container">
       <div id="timer-controls">
         <section id="timer">
-          <span id="minutes">00</span>
-          <span>:</span>
-          <span id="seconds">00</span>
+          <span class="spans" id="minutes">00</span>
+          <span class="spans" id="points">:</span>
+          <span class="spans" id="seconds">00</span>
         </section>
         <section id="controls">
           <button>
@@ -41,21 +42,20 @@
 
       <!-- Ambientes -->
       <section id="environments">
-        <button class="environments-buttons">
+        <button id="forest" class="environments-buttons">
           <img src="./assets/tree.svg" alt="" />
         </button>
-        <button class="environments-buttons">
+        <button id="rain" class="environments-buttons">
           <img src="./assets/rain.svg" alt="" />
         </button>
-        <button class="environments-buttons">
+        <button id="garden" class="environments-buttons">
           <img src="./assets/house.svg" alt="" />
         </button>
-        <button class="environments-buttons">
+        <button id="fire" class="environments-buttons">
           <img src="./assets/fire.svg" alt="" />
         </button>
       </section>
     </div>
 
-    <script type="module" src="./script.js" defer></script>
   </body>
 </html>

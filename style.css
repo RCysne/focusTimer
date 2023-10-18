@@ -12,16 +12,29 @@
   --icon-white: #FFF;
   --button-hover: #02799D;
   --environment-back: #E1E1E6;
+  --back-black: #000;
 }
 
-#toggle-mode {
+#toggle-view-mode {
   position: absolute;
   top: 10px;
   right: 15px;
+  width: 3rem;
+  height: 2rem;
 
   border: none;
   border-radius: 999rem;
   cursor: pointer;
+}
+
+.dark-active {
+  background-color: var(--back-black);
+  color: var(--item-white);
+}
+
+.dark-active .ph-moon,
+body:not(.dark-active) .ph-sun {
+  display: none;
 }
 
 #container {
@@ -83,10 +96,4 @@
 
 .environments-buttons:hover {
   background-color: var(--button-hover);
-}
-
-/*  CONTROLS RUNNING */
-
-.running {
-  
 }
