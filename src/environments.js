@@ -33,6 +33,6 @@ garden.addEventListener('click', () => {
 })
 
 fire.addEventListener('click', () => {
-    document.body.style.background = 'url(../assets/fogo2.jpg)'
+    document.body.style.background = 'url(../assets/fogo2.jpg)';
     colorFont('white');
 });
