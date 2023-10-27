@@ -37,6 +37,11 @@ body:not(.dark-active) .ph-sun {
   display: none;
 }
 
+.play-active .ph-play-circle,
+#controls:not(.play-active) .ph-pause-circle{
+  display: none;
+}
+
 #container {
   width: 82.1rem;
   height: 33.6rem;
@@ -65,7 +70,7 @@ body:not(.dark-active) .ph-sun {
   gap: 2rem;
   background-color: var(--environment-back);
   border-radius: 999rem;
-  padding: 1rem;;
+  padding: 1rem;
 }
 
 #timer-controls button {
@@ -89,11 +94,16 @@ body:not(.dark-active) .ph-sun {
   border-radius: 2.4rem;
   border: none;
   display: flex;
-  padding: 5rem;
+  align-items: center;
+  justify-content: center;
 
   cursor: pointer;
 }
 
 .environments-buttons:hover {
   background-color: var(--button-hover);
+}
+
+.environments-buttons:hover .fill {
+  fill: #ffffff;
 }
