@@ -48,4 +48,6 @@ Durante a contagem, escolha o tema escuro e altere o som de alerta para uma opç
 Contribuição
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues, fazer forks ou enviar pull requests com melhorias.
 
-![timer-01]()
+![timer-01](https://github.com/RCysne/focusTimer/blob/main/assets/timer-01.png)
+![timer-02](https://github.com/RCysne/focusTimer/blob/main/assets/timer-02.png)
+![timer-03](https://github.com/RCysne/focusTimer/blob/main/assets/timer-03.png)
